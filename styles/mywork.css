@@ -1,0 +1,88 @@
+.my-work {
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+header {
+    color: #734026;
+    padding: 1rem;
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #734026;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    color: #734026;
+    margin-bottom: 0.5rem;
+}
+
+.project h2 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+}
+
+.project h2 a:hover {
+    text-decoration: underline;
+}
+
+.project p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #24292e;
+}
+
+.github-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.github-link p {
+    font-size: 1.25rem;
+    color: #734026;
+}
+
+.github-link a {
+    color: #cf8865;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-link a:hover {
+    color: #734026;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .project h2 {
+        font-size: 1.5rem;
+    }
+
+    .project p {
+        font-size: 1rem;
+    }
+
+    .github-link p {
+        font-size: 1rem;
+    }
+}

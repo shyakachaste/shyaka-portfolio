@@ -1,0 +1,123 @@
+.events {
+    background-color: #fff;
+    padding: 3rem 0;
+    height: 100vh;
+}
+
+header {
+    color: #734026;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.events h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #24292e;
+    position: relative;
+}
+
+
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.event {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.event:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.event-header h2 {
+    font-size: 1.5rem;
+    color: #24292e;
+}
+
+.event p {
+    font-size: 1rem;
+    color: #24292e;
+}
+
+.event a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.event a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+.event-status {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.event-status.completed {
+    background-color: #28a745;
+    color: white;
+}
+
+.event-status.ongoing {
+    background-color: #f39c12;
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .events h1 {
+        font-size: 2rem;
+    }
+
+    .event-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .event p {
+        font-size: 0.875rem;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-menu.open {
+        display: flex;
+    }
+}
