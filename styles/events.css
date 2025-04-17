@@ -1,7 +1,7 @@
 .events {
     background-color: #fff;
     padding: 3rem 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -11,11 +11,10 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .events h1 {
@@ -26,11 +25,10 @@ header {
     position: relative;
 }
 
-
 .event-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
 .event {
@@ -51,16 +49,20 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .event-header h2 {
     font-size: 1.5rem;
     color: #24292e;
+    flex: 1 1 auto;
 }
 
 .event p {
     font-size: 1rem;
     color: #24292e;
+    margin-top: 1rem;
 }
 
 .event a {
@@ -68,6 +70,8 @@ header {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
+    display: inline-block;
+    margin-top: 0.5rem;
 }
 
 .event a:hover {
@@ -80,6 +84,7 @@ header {
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .event-status.completed {
@@ -92,8 +97,6 @@ header {
     color: white;
 }
 
-
-
 @media (max-width: 768px) {
     .events h1 {
         font-size: 2rem;
@@ -104,7 +107,7 @@ header {
     }
 
     .event p {
-        font-size: 0.875rem;
+        font-size: 0.9rem;
     }
 
     .navbar-menu {
@@ -115,9 +118,29 @@ header {
 
     .navbar-toggle {
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .navbar-menu.open {
         display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .events h1 {
+        font-size: 1.75rem;
+    }
+
+    .event-header h2 {
+        font-size: 1.1rem;
+    }
+
+    .event p {
+        font-size: 0.85rem;
     }
 }
