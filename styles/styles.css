@@ -10,49 +10,6 @@ body {
     background-repeat: no-repeat;
 }
 
-#preloader {
-    position: fixed;
-    inset: 0;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
-    opacity: 1;
-    transition: opacity 1s ease, visibility 1s ease;
-}
-
-#preloader.fade-out {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.preloader-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: pulse 1.5s infinite ease-in-out;
-}
-
-.preloader-logo {
-    width: 100px;
-    height: auto;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.1);
-        opacity: 0.8;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
 
 
 /* Header Styles */
@@ -77,9 +34,10 @@ header {
 }
 
 .navbar-brand .logo {
-    height: 35px;
+    height: 55px;
     width: auto;
     margin-right: 10px;
+    border-radius: 40px;
 }
 
 .navbar-toggle {
