@@ -121,7 +121,7 @@ p {
 }
 
 .skill-list li {
-    font-size: 1.125rem;
+    font-size: 1.05rem;
     margin-bottom: 0.5rem;
 }
 
@@ -129,6 +129,8 @@ p {
     color: #734026;
     margin-right: 0.5rem;
 }
+
+/* Removed skill-grid and reverted to original list styling */
 
 .fun-facts ul {
     list-style: none;

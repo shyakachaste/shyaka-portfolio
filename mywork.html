@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My Work - Shyaka Chaste">
     <title>My Work - Shyaka Chaste</title>
-    <link rel="shortcut icon" href="images/chaste.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/mywork.css">
@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar">
             <div class="navbar-brand">
-                <a href="index.html"><img src="images/chaste.jpg" alt="Shyaka Chaste Logo" class="logo"></a>
+                <a href="index.html"><img src="images/logo.png" alt="Shyaka Chaste Logo" class="logo"></a>
             </div>
             <div class="navbar-toggle" id="mobile-menu">
                 <i class="fas fa-bars open-icon"></i>
@@ -32,38 +32,49 @@
     </header>
     <section class="my-work">
         <div class="container">
-            <h1>My Projects</h1>
-            <div class="project">
-                <h2><a href="https://www.youthcodecamp.live/" target="_blank">Youth Code Camp Website</a></h2>
-                <p>Developed the Youth Code Camp website using React and CSS, creating a modern and responsive design to showcase our programs and events</p>
+            <h1>My Work</h1>
+            <p class="lead">A selection of projects I’ve built — clean, responsive, and focused on real impact.</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="images/projects/hackwithme.png" alt="Hack With Me Website thumbnail">
             </div>
-            <div class="project">
-                <h2><a href="https://www.hackwithme2025.com/" target="_blank">Hack With Me Website</a></h2>
-                <p>Developed the Hack With Me website using React and CSS, creating a
-                    responsive and user-friendly platform for event information.Added a bot called Ghost, which answers
-                    all questions about Hack With Me</p>
-            </div>
-            <div class="project">
-                <h2><a href="https://www.hacknoel.live/" target="_blank">Hack Noel Website</a></h2>
-                <p>Developed the Hack Noel website using React and CSS to provide event details
-                    and promote the hackathon</p>
-            </div>
-            <div class="project">
-                <h2><a href="https://github.com/shyakachaste/mystic-adventure" target="_blank">Mystic Adventure</a></h2>
-                <p>Built "Mystic Adventure," an action-packed game using GDScript in the Godot
-                    Engine. Players explore a magical world, ght with a sword, and complete quests in this exciting
-                    adventure. Visit</p>
-            </div>
-            <div class="project">
-                <h2><a href="https://github.com/shyakachaste/InspireMateBot" target="_blank">Inspire Mate Bot</a></h2>
-                <p>Developed InspireMateBot using Python (Flask). It’s a Discord bot designed to
-                    bring inspiration, motivation, and good vibes to servers. Visit</p>
+                    <div class="card-content">
+                        <h3>Hack With Me Website</h3>
+                        <p class="project-desc">Developed the Hack With Me website using React and CSS, creating a responsive and user-friendly platform for event information.</p>
+                        <ul class="project-tech">
+                            <li>React</li>
+                            <li>CSS</li>
+                            <li>Responsive UI</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn primary" href="https://www.hackwithme.org/" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="images/projects/talentmapai.png" alt="Talent Map AI thumbnail">
+                    </div>
+                    <div class="card-content">
+                        <h3>Talent Map AI</h3>
+                        <p class="project-desc">TalentMap AI evaluates candidate resumes against job requirements using NLP and semantic matching. Built with TypeScript, Next.js, and Tailwind CSS, featuring instant match scores and detailed reports.</p>
+                        <ul class="project-tech">
+                            <li>TypeScript</li>
+                            <li>Next.js</li>
+                            <li>Tailwind CSS</li>
+                            <li>NLP</li>
+                        </ul>
+                    </div>
+                    <div class="project-actions">
+                        <a class="btn primary" href="https://talentmap-ai.vercel.app/" target="_blank" rel="noopener">Visit</a>
+                    </div>
+                </article>
             </div>
             <div class="github-link">
                 <p>For more projects, please visit my <a href="https://github.com/shyakachaste" target="_blank">GitHub</a>.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
     <footer class="footer">
         <div class="container">
